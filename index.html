@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #menuToggle:checked ~ .mobile-menu {
+        transform: translateX(0);
+      }
+
+      #menuToggle:checked ~ #overlay {
+        display: block;
+      }
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-[#282C33]">
+    <header class="container1 bg-[#2C3036]">
+      <div class="flex items-center justify-between py-5">
+        <div class="">
+          <a href="./index.html"><img src="./img/logo.svg" alt="" /></a>
+        </div>
+        <div class="">
+          <nav class="hidden relative lg:inline-flex overflow-hidden">
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] text-base relative py-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="orange"
+              ><span class="text-[var(--primary)]">#</span>Home</a
+            >
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] relative text-base py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="green"
+              ><span class="text-[var(--primary)]">#</span>works</a
+            >
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] relative text-base py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="blue"
+              ><span class="text-[var(--primary)]">#</span>about-me</a
+            >
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="red"
+              ><span class="text-[var(--primary)]">#</span>contacts</a
+            >
+            <span
+              class="nav-indicator absolute left-0 bottom-0 h-1 z-10 rounded-t-lg transition-all duration-400 bg-orange-500"
+            ></span>
+            <select
+              class="outline-none border-none font-medium text-[var(--gray)]"
+              name=""
+              id=""
+            >
+              <option class="bg-[var(--background)] text-base" value="ENG">
+                ENG
+              </option>
+              <option class="bg-[var(--background)] text-base" value="RU">
+                RU
+              </option>
+              <option class="bg-[var(--background)] text-base" value="UZ">
+                UZ
+              </option>
+            </select>
+          </nav>
+          <div class="lg:hidden">
+            <input type="checkbox" id="menuToggle" class="hidden" />
+            <label for="menuToggle" class="cursor-pointer text-white text-2xl">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <div id="overlay" class="hidden fixed inset-0 z-40"></div>
+            <div
+              class="mobile-menu fixed top-0 right-0 w-64 h-full bg-gray-900 z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col"
+            >
+              <div class="p-4 border-b border-gray-700">
+                <div class="flex justify-between items-center">
+                  <div>
+                    <a href="#">
+                      <div class="">
+                        <img src="./img/logo.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <label
+                      for="menuToggle"
+                      class="cursor-pointer text-white text-2xl hover:text-red-400 transition-colors"
+                    >
+                      <i class="fa-solid fa-times"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center py-8">
+                <div class="w-full">
+                  <nav
+                    class="flex flex-col items-start relative lg:inline-flex overflow-hidden"
+                  >
+                    <a
+                      href="#"
+                      class="nav-item text-white text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="orange"
+                      ><span class="text-[var(--primary)]">#</span>Home</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-item text-white relative text-lg py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="green"
+                      ><span class="text-[var(--primary)]">#</span>works</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-item text-white relative text-lg py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="blue"
+                      ><span class="text-[var(--primary)]">#</span>about-me</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-item text-white text-lg relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="red"
+                      ><span class="text-[var(--primary)]">#</span>contacts</a
+                    >
+                    <span
+                      class="nav-indicator absolute left-0 bottom-0 h-1 z-10 rounded-t-lg transition-all duration-400 bg-orange-500"
+                    ></span>
+                    <select
+                      class="outline-none border-none px-5 font-medium text-[var(--gray)]"
+                      name=""
+                      id=""
+                    >
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="ENG"
+                      >
+                        ENG
+                      </option>
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="RU"
+                      >
+                        RU
+                      </option>
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="UZ"
+                      >
+                        UZ
+                      </option>
+                    </select>
+                  </nav>
+                </div>
+                <div class="gap-3 mt-6 flex items-center">
+                  <div
+                    class="size-10 rounded-full bg-[red] flex justify-center items-center cursor-pointer hover:bg-red-600 transition-colors"
+                  >
+                    <a href="tel:9999999999">
+                      <i class="fas fa-phone text-white"></i>
+                    </a>
+                  </div>
+                  <div class="cursor-pointer">
+                    <a href="https://t.me/username">
+                      <div
+                        class="size-10 rounded-full bg-white flex justify-center items-center"
+                      >
+                        <i class="fab fa-telegram text-red-500 text-xl"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container1 bg-[#2C3036] py-8 lg:py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        <div
+          class="flex flex-col items-center lg:items-start justify-center px-4 sm:px-6 lg:px-0 order-2 lg:order-1"
+        >
+          <div
+            class="w-full max-w-[430px] flex flex-col justify-around items-center lg:items-start space-y-6 lg:space-y-8"
+          >
+            <h1
+              class="font-semibold text-xl sm:text-2xl lg:text-3xl text-white text-center lg:text-left leading-tight"
+            >
+              Elias is a
+              <span class="text-[var(--primary)]">web designer</span> and
+              <span class="text-[var(--primary)]">front-end developer</span>
+            </h1>
+            <p
+              class="text-sm sm:text-base text-[var(--gray)] text-center lg:text-left leading-relaxed"
+            >
+              He crafts responsive websites where technologies meet creativity
+            </p>
+            <button
+              class="border border-solid border-[var(--primary)] px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-white hover:bg-[var(--primary)] transition-colors duration-300"
+            >
+              Contact me!!
+            </button>
+          </div>
+        </div>
+        <div class="order-2 lg:order-2 px-4 sm:px-6 lg:px-0">
+          <img
+            class="w-full h-auto max-w-md mx-auto lg:max-w-full"
+            src="./img/showcase.png"
+            alt="Elias - Web Designer and Developer"
+          />
+        </div>
+        <div
+          class="col-span-1 lg:col-start-2 lg:col-end-3 flex items-center gap-3 p-3 border border-solid border-[var(--gray)] order-3 mt-4 lg:mt-0 mx-4 sm:mx-6 lg:mx-0"
+        >
+          <div class="size-6 sm:size-5 bg-[var(--primary)]"></div>
+          <div class="text-sm sm:text-base text-white">
+            <p>Currently working on Portfolio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container1 bg-[#2C3036] py-8 sm:py-12 lg:py-[60px] px-4 sm:px-6 lg:px-8"
+    >
+      <div class="flex flex-col max-w-6xl mx-auto">
+        <div
+          class="border border-solid border-[var(--gray)] flex items-center justify-center relative p-6 sm:p-8 lg:p-12 rounded-lg"
+        >
+          <div class="absolute -top-3 -left-3 lg:top-[-10px] lg:left-4">
+            <svg
+              width="32"
+              height="22"
+              class="sm:w-10 sm:h-7 lg:w-[42px] lg:h-[29px]"
+              viewBox="0 0 42 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="41.472" height="28.704" fill="#282C33" />
+              <path
+                d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z"
+                fill="#ABB2BF"
+              />
+            </svg>
+          </div>
+          <p
+            class="font-medium text-lg sm:text-xl lg:text-2xl text-[var(--white)] text-center lg:text-left leading-relaxed"
+          >
+            With great power comes great electricity bill
+          </p>
+          <div class="absolute -bottom-3 -right-3 lg:bottom-[-10px] lg:right-4">
+            <svg
+              width="32"
+              height="22"
+              class="sm:w-10 sm:h-7 lg:w-[42px] lg:h-[29px]"
+              viewBox="0 0 42 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="41.472" height="28.704" fill="#282C33" />
+              <path
+                d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z"
+                fill="#ABB2BF"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <div
+            class="border border-solid border-[var(--gray)] py-2 px-4 sm:py-3 sm:px-6 lg:py-3 lg:px-9"
+          >
+            <p class="text-base sm:text-lg lg:text-xl text-[var(--white)]">
+              - Dr. Who
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container1 bg-[#2C3036] py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-5">
+          <div class="">
+            <h2 href="#" class="text-[var(--white)] text-3xl font-medium">
+              <span class="text-[var(--primary)]">#</span>works
+            </h2>
+          </div>
+          <div class="w-[50px] md:w-[300px] h-[2px] bg-[var(--primary)]"></div>
+        </div>
+        <div class="">
+          <p class="font-medium text-base text-[var(--white)] cursor-pointer">
+            View all ~~>
+          </p>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-7xl mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 border border-solid border-[var(--gray)] rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+        >
+          <div class="border-b border-solid border-[var(--gray)]">
+            <img class="w-full" src="./img/grid.png" alt="ChertNodes Project" />
+          </div>
+          <div
+            class="flex flex-wrap gap-2 py-3 px-3 sm:px-4 border-b border-solid border-[var(--gray)]"
+          >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >HTML</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >SCSS</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >Python</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >Flask</span
+            >
+          </div>
+          <div
+            class="p-3 sm:p-4 flex flex-col justify-between min-h-[140px] sm:min-h-[150px]"
+          >
+            <div class="mb-3">
+              <h2
+                class="font-medium text-xl sm:text-2xl text-[var(--white)] mb-2"
+              >
+                ChertNodes
+              </h2>
+              <p class="font-normal text-sm sm:text-base text-[var(--gray)]">
+                Minecraft servers hosting
+              </p>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+              <button
+                class="font-medium text-sm sm:text-base px-3 py-2 border text-[var(--white)] border-solid border-[var(--primary)] hover:bg-[var(--primary)] transition-colors duration-300"
+              >
+                Live <~>
+              </button>
+              <button
+                class="font-medium text-sm sm:text-base px-3 py-2 border border-solid border-[var(--white)] text-[var(--white)] hover:bg-[var(--white)] hover:text-[#2C3036] transition-colors duration-300"
+              >
+                Cached >=
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 border border-solid border-[var(--gray)] rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+        >
+          <div class="border-b border-solid border-[var(--gray)]">
+            <img class="w-full" src="./img/grid2.png" alt="ProtectX Project" />
+          </div>
+          <div
+            class="py-3 px-3 sm:px-4 border-b border-solid border-[var(--gray)]"
+          >
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >React</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >Express</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >Discord.js</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >Node.js</span
+              >
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >SCSS</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >Python</span
+              >
+              <span
+                class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+                >Flask</span
+              >
+            </div>
+          </div>
+          <div
+            class="p-3 sm:p-4 flex flex-col justify-between min-h-[140px] sm:min-h-[150px]"
+          >
+            <div class="mb-3">
+              <h2
+                class="font-medium text-xl sm:text-2xl text-[var(--white)] mb-2"
+              >
+                ProtectX
+              </h2>
+              <p class="font-normal text-sm sm:text-base text-[var(--gray)]">
+                Discord anti-crash bot
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="font-medium text-sm sm:text-base px-3 py-2 border text-[var(--white)] border-solid border-[var(--primary)] hover:bg-[var(--primary)] transition-colors duration-300"
+              >
+                Live <~>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 border border-solid border-[var(--gray)] rounded-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+        >
+          <div class="border-b border-solid border-[var(--gray)]">
+            <img
+              class="w-full"
+              src="./img/grid3.png"
+              alt="Kahoot Answers Viewer Project"
+            />
+          </div>
+          <div
+            class="flex flex-wrap gap-2 py-3 px-3 sm:px-4 border-b border-solid border-[var(--gray)]"
+          >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >CSS</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >Express</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >Node.js</span
+            >
+            <span
+              class="font-normal text-sm sm:text-base text-[var(--gray)] px-2 py-1"
+              >Flask</span
+            >
+          </div>
+          <div
+            class="p-3 sm:p-4 flex flex-col justify-between min-h-[140px] sm:min-h-[150px]"
+          >
+            <div class="mb-3">
+              <h2
+                class="font-medium text-xl sm:text-2xl text-[var(--white)] mb-2"
+              >
+                Kahoot Answers Viewer
+              </h2>
+              <p class="font-normal text-sm sm:text-base text-[var(--gray)]">
+                Get answers to your kahoot quiz
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="font-medium text-sm sm:text-base px-3 py-2 border text-[var(--white)] border-solid border-[var(--primary)] hover:bg-[var(--primary)] transition-colors duration-300"
+              >
+                Live <~>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container1 bg-[#2C3036]">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-5">
+          <div class="">
+            <h2 href="#" class="text-[var(--white)] text-3xl font-medium">
+              <span class="text-[var(--primary)]">#</span>skills
+            </h2>
+          </div>
+          <div class="w-[50px] md:w-[300px] h-[2px] bg-[var(--primary)]"></div>
+        </div>
+        <div class="">
+          <p class="font-medium text-base text-[var(--white)] cursor-pointer">
+            View all ~~>
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="">
+          <img src="./img/rectangle.png" alt="" />
+        </div>
+        <div class="">
+          <div class="">
+            <div class="">
+              <h2 class="font-semibold text-base text-[var(--white)] border">
+                Languages
+              </h2>
+            </div>
+            <div class="">
+              <p class="font-normal text-base text-[var(--gray)]">
+                TypeScript Lua
+              </p>
+              <p class="font-normal text-base text-[var(--gray)]">
+                Python JavaScript
+              </p>
+            </div>
+          </div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
