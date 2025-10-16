@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #menuToggle:checked ~ .mobile-menu {
+        transform: translateX(0);
+      }
+
+      #menuToggle:checked ~ #overlay {
+        display: block;
+      }
+      body.menu-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-[#282C33]">
+    <header class="container1 bg-[#2C3036] px-4 md:px-8 lg:px-16">
+      <div class="flex items-center justify-between py-5">
+        <div class="">
+          <a href="./index.html"><img src="./img/logo.svg" alt="" /></a>
+        </div>
+        <div class="">
+          <nav class="hidden relative lg:inline-flex overflow-hidden">
+            <a
+              href="./index.html"
+              class="nav-item text-[var(--gray)] text-base relative py-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="orange"
+              ><span class="text-[var(--primary)]">#</span>Home</a
+            >
+            <a
+              href="./index1.html"
+              class="nav-item text-[var(--gray)] relative text-base py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="green"
+              ><span class="text-[var(--primary)]">#</span>works</a
+            >
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] relative text-base py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="blue"
+              ><span class="text-[var(--primary)]">#</span>about-me</a
+            >
+            <a
+              href="#"
+              class="nav-item text-[var(--gray)] text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+              active-color="red"
+              ><span class="text-[var(--primary)]">#</span>contacts</a
+            >
+            <span
+              class="nav-indicator absolute left-0 bottom-0 h-1 z-10 rounded-t-lg transition-all duration-400 bg-orange-500"
+            ></span>
+            <select
+              class="outline-none border-none font-medium text-[var(--gray)]"
+              name=""
+              id=""
+            >
+              <option class="bg-[var(--background)] text-base" value="ENG">
+                ENG
+              </option>
+              <option class="bg-[var(--background)] text-base" value="RU">
+                RU
+              </option>
+              <option class="bg-[var(--background)] text-base" value="UZ">
+                UZ
+              </option>
+            </select>
+          </nav>
+          <div class="lg:hidden">
+            <input type="checkbox" id="menuToggle" class="hidden" />
+            <label for="menuToggle" class="cursor-pointer text-white text-2xl">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <div id="overlay" class="hidden fixed inset-0 z-40"></div>
+            <div
+              class="mobile-menu fixed top-0 right-0 w-64 h-full bg-gray-900 z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col"
+            >
+              <div class="p-4 border-b border-gray-700">
+                <div class="flex justify-between items-center">
+                  <div>
+                    <a href="#">
+                      <div class="">
+                        <img src="./img/logo.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <label
+                      for="menuToggle"
+                      class="cursor-pointer text-white text-2xl hover:text-red-400 transition-colors"
+                    >
+                      <i class="fa-solid fa-times"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center py-8">
+                <div class="w-full">
+                  <nav
+                    class="flex flex-col items-start relative lg:inline-flex overflow-hidden"
+                  >
+                    <a
+                      href="./index.html"
+                      class="nav-item text-white text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="orange"
+                      ><span class="text-[var(--primary)]">#</span>Home</a
+                    >
+                    <a
+                      href=""
+                      class="nav-item text-white relative text-lg py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="green"
+                      ><span class="text-[var(--primary)]">#</span>works</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-item text-white relative text-lg py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="blue"
+                      ><span class="text-[var(--primary)]">#</span>about-me</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-item text-white text-lg relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
+                      active-color="red"
+                      ><span class="text-[var(--primary)]">#</span>contacts</a
+                    >
+                    <span
+                      class="nav-indicator absolute left-0 bottom-0 h-1 z-10 rounded-t-lg transition-all duration-400 bg-orange-500"
+                    ></span>
+                    <select
+                      class="outline-none border-none px-5 font-medium text-[var(--gray)]"
+                      name=""
+                      id=""
+                    >
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="ENG"
+                      >
+                        ENG
+                      </option>
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="RU"
+                      >
+                        RU
+                      </option>
+                      <option
+                        class="bg-[var(--background)] text-base"
+                        value="UZ"
+                      >
+                        UZ
+                      </option>
+                    </select>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container1 bg-[#2C3036] py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 gap-4"
+      >
+        <div class="flex flex-col gap-3 sm:gap-5">
+          <div>
+            <h2 class="text-white text-2xl sm:text-3xl font-medium">
+              <span class="text-[var(--primary)]">/</span>about-me
+            </h2>
+          </div>
+          <div class="">
+            <p class="text-base font-normal text-white">Who am i?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container1 bg-[#2C3036] py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-5">
+          <div class="">
+            <h2 class="text-white text-2xl sm:text-3xl font-medium">
+              <span class="text-[var(--primary)]">#</span>skills
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+        >
+          <div
+            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
+          >
+            <div class="skill-header border-b border-[var(--gray)] p-4">
+              <h3 class="font-semibold text-white text-xl sm:text-2xl">
+                <span class="text-[var(--primary)]">#</span>Languages
+              </h3>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >TypeScript</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Lua</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Python</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
+          >
+            <div class="skill-header border-b border-[var(--gray)] p-4">
+              <h3 class="font-semibold text-white text-xl sm:text-2xl">
+                Other
+              </h3>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >HTML</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >CSS</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >EJS</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >SCSS</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >REST</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Jinja</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44] lg:col-span-1 xl:col-span-1"
+          >
+            <div class="skill-header border-b border-[var(--gray)] p-4">
+              <h3 class="font-semibold text-white text-xl sm:text-2xl">
+                Tools
+              </h3>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >VSCode</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Neovim</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Linux</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Figma</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >XFCE</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Arch</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Git</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Font Awesome</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >KDE</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >fish</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div
+            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
+          >
+            <div class="skill-header border-b border-[var(--gray)] p-4">
+              <h3 class="font-semibold text-white text-xl sm:text-2xl">
+                <span class="text-[var(--primary)]">#</span>Databases
+              </h3>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >SQLite</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >PostgreSQL</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Mongo</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44] sm:col-span-2 lg:col-span-1 xl:col-span-1"
+          >
+            <div class="skill-header border-b border-[var(--gray)] p-4">
+              <h3 class="font-semibold text-white text-xl sm:text-2xl">
+                <span class="text-[var(--primary)]">#</span>Frameworks
+              </h3>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >React</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Vue</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Disnake</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Discord.js</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Flask</span
+                >
+                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
+                  >Express.js</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
