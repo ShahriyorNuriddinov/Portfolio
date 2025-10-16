@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="stylesheet"
@@ -57,7 +57,7 @@
               ><span class="text-[var(--primary)]">#</span>about-me</a
             >
             <a
-              href="./index3.html"
+              href="#"
               class="nav-item text-[var(--gray)] text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
               active-color="red"
               ><span class="text-[var(--primary)]">#</span>contacts</a
@@ -115,7 +115,7 @@
                     class="flex flex-col items-start relative lg:inline-flex overflow-hidden"
                   >
                     <a
-                      href="./index.html"
+                      href="#"
                       class="nav-item text-white text-base relative py-5 px-5 mx-1.5 z-10 transition-colors duration-300 font-medium"
                       active-color="orange"
                       ><span class="text-[var(--primary)]">#</span>Home</a
@@ -180,7 +180,7 @@
         <div class="flex flex-col gap-3 sm:gap-5">
           <div>
             <h2 class="text-white text-2xl sm:text-3xl font-medium">
-              <span class="text-[var(--primary)]">/</span>about-me
+              <span class="text-[var(--primary)]">/</span>contacts
             </h2>
           </div>
           <div class="">
@@ -190,268 +190,78 @@
       </div>
     </section>
     <section class="container1 bg-[#2C3036] py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between mb-10">
-        <div class="flex items-center gap-5">
-          <div class="">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 gap-4"
+      >
+        <div class="flex items-center gap-3 sm:gap-5">
+          <div>
             <h2 class="text-white text-2xl sm:text-3xl font-medium">
-              <span class="text-[var(--primary)]">#</span>skills
+              <span class="text-[var(--primary)]">#</span>contacts
             </h2>
           </div>
+          <div
+            class="w-[30px] sm:w-[50px] md:w-[300px] h-[2px] bg-[var(--primary)]"
+          ></div>
         </div>
       </div>
-      <div class="">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
-        >
-          <div
-            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div class="lg:w-1/2">
+          <p
+            class="font-normal text-[var(--gray)] text-base md:text-lg leading-relaxed"
           >
-            <div class="skill-header border-b border-[var(--gray)] p-4">
-              <h3 class="font-semibold text-white text-xl sm:text-2xl">
-                <span class="text-[var(--primary)]">#</span>Languages
-              </h3>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >TypeScript</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Lua</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Python</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >JavaScript</span
-                >
-              </div>
-            </div>
-          </div>
+            I'm interested in freelance opportunities. However, if you have
+            other request or question, don't hesitate to contact me
+          </p>
+        </div>
+        <div class="lg:w-1/2 flex justify-start lg:justify-end">
           <div
-            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
+            class="border border-[var(--gray)] p-4 w-full max-w-[280px] lg:max-w-[204px]"
           >
-            <div class="skill-header border-b border-[var(--gray)] p-4">
-              <h3 class="font-semibold text-white text-xl sm:text-2xl">
-                Other
-              </h3>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >HTML</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >CSS</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >EJS</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >SCSS</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >REST</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Jinja</span
-                >
+            <p class="font-semibold text-base text-white mb-4">
+              Message me here
+            </p>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="">
+                <img src="./img/Discord.svg" alt="" />
               </div>
+              <p class="font-normal text-sm text-[var(--gray)]">!Elias#3519</p>
             </div>
-          </div>
-          <div
-            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44] lg:col-span-1 xl:col-span-1"
-          >
-            <div class="skill-header border-b border-[var(--gray)] p-4">
-              <h3 class="font-semibold text-white text-xl sm:text-2xl">
-                Tools
-              </h3>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >VSCode</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Neovim</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Linux</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Figma</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >XFCE</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Arch</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Git</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Font Awesome</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >KDE</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >fish</span
-                >
+            <div class="flex items-center gap-3">
+              <div class="">
+                <img src="./img/Email.svg" alt="" />
               </div>
-            </div>
-          </div>
-          <div
-            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44]"
-          >
-            <div class="skill-header border-b border-[var(--gray)] p-4">
-              <h3 class="font-semibold text-white text-xl sm:text-2xl">
-                <span class="text-[var(--primary)]">#</span>Databases
-              </h3>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >SQLite</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >PostgreSQL</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Mongo</span
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="skill-card border border-[var(--gray)] rounded-lg bg-[#363B44] sm:col-span-2 lg:col-span-1 xl:col-span-1"
-          >
-            <div class="skill-header border-b border-[var(--gray)] p-4">
-              <h3 class="font-semibold text-white text-xl sm:text-2xl">
-                <span class="text-[var(--primary)]">#</span>Frameworks
-              </h3>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >React</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Vue</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Disnake</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Discord.js</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Flask</span
-                >
-                <span class="px-3 py-1 bg-[#2C3036] text-[var(--gray)] text-sm"
-                  >Express.js</span
-                >
-              </div>
+              <p class="font-normal text-sm text-[var(--gray)]">
+                elias@elias.me
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="container1 bg-[#2C3036] py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between mb-8 sm:mb-10">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 gap-4"
+      >
         <div class="flex items-center gap-3 sm:gap-5">
-          <div class="">
+          <div>
             <h2 class="text-white text-2xl sm:text-3xl font-medium">
-              <span class="text-[var(--primary)]">#</span>my-fun-facts
+              <span class="text-[var(--primary)]">#</span>all-media
             </h2>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-        <div class="order-2 lg:order-1">
-          <div class="flex flex-col gap-3 sm:gap-4">
-            <div class="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4">
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I like winter more than summer
-                </h3>
-              </div>
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I often bike with my friends
-                </h3>
-              </div>
-            </div>
-            <div class="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4">
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I like pizza and pasta
-                </h3>
-              </div>
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I was in Egypt, Poland and Turkey
-                </h3>
-              </div>
-            </div>
-            <div class="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4">
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  My favorite movie is The Green Mile
-                </h3>
-              </div>
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I am still in school
-                </h3>
-              </div>
-            </div>
-            <div class="flex flex-col sm:flex-row items-stretch gap-3 sm:gap-4">
-              <div
-                class="skill-header flex items-start border border-[var(--gray)] p-3 sm:p-4 flex-1 sm:flex-none sm:w-full"
-              >
-                <h3
-                  class="font-semibold text-[var(--gray)] text-sm sm:text-base leading-relaxed"
-                >
-                  I don't have any siblings
-                </h3>
-              </div>
-              <div class="hidden sm:block flex-1"></div>
-            </div>
-          </div>
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3">
+          <img src="./img/Vector.svg" alt="" />
+          <p class="font-normal text-sm text-[var(--gray)]">@elias</p>
         </div>
-        <div class="order-1 lg:order-2 flex justify-center lg:justify-start">
-          <div class="w-full max-w-md lg:max-w-full">
-            <img src="./img/rectangle2.png" alt="" class="w-full" />
-          </div>
+        <div class="flex items-center gap-3">
+          <img src="./img/Vector.svg" alt="" />
+          <p class="font-normal text-sm text-[var(--gray)]">@elias</p>
         </div>
       </div>
     </section>
+    <hr class="text-white" />
     <footer class="bg-[#2C3036] container1 py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-6">
         <div class="lg:w-1/2 flex flex-col gap-4">
@@ -536,6 +346,6 @@
         </div>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
